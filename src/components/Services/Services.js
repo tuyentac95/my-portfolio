@@ -11,7 +11,7 @@ const Services = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="services">
+    <div className="services" id='Services'>
       <div className="awesome">
         <span style={{
           color: darkMode ? 'white' : ''
@@ -29,7 +29,7 @@ const Services = () => {
 
       <div className="cards">
         <div style={{
-          left: '30rem'
+          left: '30rem', top: '1rem'
         }}>
           <Card emoji={Heart}
                 heading={'Design'}
