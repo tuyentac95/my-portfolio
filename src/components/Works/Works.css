@@ -77,14 +77,14 @@
 
 .blueCircle{
     background: #194988;
-    left: 14rem;
-    top: -1rem;
+    left: 20rem;
+    top: 1rem;
 }
 
 .yellowCircle{
     background: #F5C32C;
-    left: 14rem;
-    top: 6rem;
+    left: 20rem;
+    top: 8rem;
 }
 
 @media screen and (max-width: 480px) {

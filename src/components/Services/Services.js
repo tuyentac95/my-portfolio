@@ -5,13 +5,20 @@ import Glasses from '../../img/glasses.png';
 import Humble from '../../img/humble.png';
 import Card from "../Card/Card";
 import {themeContext} from "../../util/Context";
+import {motion} from "framer-motion";
 
 const Services = () => {
+
+  const transition = {
+    duration: 1,
+    type: 'spring'
+  }
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="services">
+    <div className="services" id='Services'>
       <div className="awesome">
         <span style={{
           color: darkMode ? 'white' : ''
@@ -28,31 +35,35 @@ const Services = () => {
       </div>
 
       <div className="cards">
-        <div style={{
-          left: '30rem'
-        }}>
+        <motion.div
+          initial={{left: '34rem', top: '1rem'}}
+          whileInView={{left: '28rem'}}
+          transition={transition}
+        >
           <Card emoji={Heart}
                 heading={'Design'}
-                detail={"Figma, Sketch, Photoshop, Adobe, Figma, Sketch, Photoshop, Adobe"}/>
-        </div>
+                detail={"Figma, Sketch, Photoshop, Adobe"}/>
+        </motion.div>
 
-        <div style={{
-          left: '8rem',
-          top: '12rem'
-        }}>
+        <motion.div
+          initial={{left: '-4rem', top: '12rem'}}
+          whileInView={{left: '5rem'}}
+          transition={transition}
+        >
           <Card emoji={Glasses}
                 heading={'Developer'}
-                detail={"Java, Scala, Javascrip, Figma, Sketch, Photoshop, Adobet"}/>
-        </div>
+                detail={"Java, Scala, Javascript"}/>
+        </motion.div>
 
-        <div style={{
-          left: '27rem',
-          top: '19rem'
-        }}>
+        <motion.div
+          initial={{left: '12rem', top: '19rem'}}
+          whileInView={{left: '24rem'}}
+          transition={transition}
+        >
           <Card emoji={Humble}
                 heading={'UI/UX'}
-                detail={"Something in UI UX but i don't know, Figma, Sketch, Photoshop, Adobe "}/>
-        </div>
+                detail={"Something in UI UX but i don't know "}/>
+        </motion.div>
 
         <div className="blur s-blur2" style={{
           background: "var(--purple)"
