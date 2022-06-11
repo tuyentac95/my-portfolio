@@ -6,6 +6,7 @@ import Amazon from '../../img/amazon.png';
 import Facebook from '../../img/Facebook.png';
 import Shopify from '../../img/Shopify.png';
 import {themeContext} from "../../util/Context";
+import {motion} from "framer-motion";
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -33,7 +34,12 @@ const Works = () => {
       </div>
 
       <div className="w-right">
-        <div className="w-mainCircle">
+        <motion.div
+          initial={{rotate: 45}}
+          whileInView={{rotate: 0}}
+          viewport={{margin: '-40px'}}
+          transition={{duration: 3.5, type: 'spring'}}
+          className="w-mainCircle">
           <div className="w-secCircle">
             <img src={Upwork} alt=""/>
           </div>
@@ -49,10 +55,10 @@ const Works = () => {
           <div className="w-secCircle">
             <img src={Facebook} alt=""/>
           </div>
+        </motion.div>
 
-          <div className="w-backCircle blueCircle"/>
-          <div className="w-backCircle yellowCircle"/>
-        </div>
+        <div className="w-backCircle blueCircle"/>
+        <div className="w-backCircle yellowCircle"/>
       </div>
     </div>
   );
