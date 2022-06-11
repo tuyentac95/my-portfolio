@@ -33,7 +33,7 @@ const Services = () => {
         }}>
           <Card emoji={Heart}
                 heading={'Design'}
-                detail={"Figma, Sketch, Photoshop, Adobe"}/>
+                detail={"Figma, Sketch, Photoshop, Adobe, Figma, Sketch, Photoshop, Adobe"}/>
         </div>
 
         <div style={{
@@ -42,7 +42,7 @@ const Services = () => {
         }}>
           <Card emoji={Glasses}
                 heading={'Developer'}
-                detail={"Java, Scala, Javascript"}/>
+                detail={"Java, Scala, Javascrip, Figma, Sketch, Photoshop, Adobet"}/>
         </div>
 
         <div style={{
@@ -51,7 +51,7 @@ const Services = () => {
         }}>
           <Card emoji={Humble}
                 heading={'UI/UX'}
-                detail={"Something in UI UX but i don't know "}/>
+                detail={"Something in UI UX but i don't know, Figma, Sketch, Photoshop, Adobe "}/>
         </div>
 
         <div className="blur s-blur2" style={{
