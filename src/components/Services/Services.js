@@ -18,7 +18,7 @@ const Services = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="services">
+    <div className="services" id='Services'>
       <div className="awesome">
         <span style={{
           color: darkMode ? 'white' : ''
@@ -36,7 +36,7 @@ const Services = () => {
 
       <div className="cards">
         <motion.div
-          initial={{left: '34rem'}}
+          initial={{left: '34rem', top: '1rem'}}
           whileInView={{left: '28rem'}}
           transition={transition}
         >

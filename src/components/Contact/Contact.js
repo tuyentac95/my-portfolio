@@ -18,7 +18,7 @@ const Contact = (props) => {
 
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id='Contact'>
       <div className="w-left">
         <div className="awesome">
           <span style={{
